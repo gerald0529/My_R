@@ -1,0 +1,422 @@
+<include file="Public:head" />
+
+<body> 
+    
+
+<header id="header" style="">
+
+        <div class="container clearfix" >
+
+            <h1 id="logo"> <a href="/"><img alt="logo图片" src="__ROOT__/{$Think.Config.cfg_logo}" style="width: 5.5%"/></a></h1>
+
+            <nav>
+
+                <a class="icon_menu" id="index_xs"><img src="__PUBLIC__/{$Think.Config.DEFAULT_THEME}/images/25_caidan.png"></a>
+
+                <ul id="menu">
+
+                
+
+                <li data-menuanchor="page1" class="active"><a data-name="home" href="#page1"><span>首页</span></a></li>
+                
+                <channel type='top' >
+                <li data-menuanchor="{$field.keywords}"><a href="index.php#{$field.keywords}"><span>{$field.cname}</span></a></li>
+                </channel>
+                
+                
+                <!-- <li data-menuanchor="page2"><a href="index.php#page2"><span>服务</span></a></li>
+                <li data-menuanchor="page3"><a href="index.php#page3"><span>区块链</span></a></li>       
+                <li data-menuanchor="page4"><a href="index.php#page4"><span>合作</span></a></li>
+                <li data-menuanchor="page5"><a href="index.php#page5"><span>特色</span></a></li>
+                <li data-menuanchor="page6"><a href="index.php#page6"><span>增值</span></a></li>
+                <li data-menuanchor="page7"><a href="index.php#page7"><span>关于</span></a></li>
+                <li data-menuanchor="page8"><a href="{:U('/news_l_3')}"><span>新闻</span></a></li>  -->
+
+                <li style=" width:100%;float:right" id="index_x"><img src="__PUBLIC__/{$Think.Config.DEFAULT_THEME}/images/26_close.png" style="padding-right:15px; float:right; margin-top:10px"></li>
+
+                </ul> 
+
+            </nav>
+
+            <!--<div class="nav-tel" style="font-size:16px"><a href="/">简体中文 </a>  
+            | <a style="color:#fff" href="./?t=en">English</a></div> 
+
+        </div>-->
+
+    </header> 
+
+<div class="page-container">
+
+        <section class="section page1">
+
+            <div class="rbslider-container">
+
+                <div class="home-news">
+
+                    <span></span>
+
+                    <ul>
+
+                                                            </ul>
+
+                    <a onclick="location='news.php'" href="news.php" class="more"></a>
+
+                </div>
+
+                <div class="rbslider-wrapper">
+                    <showad cid="1">
+                        <div class="rbslider-slide slide{$field.name}"></div>
+                    </showad>  
+                    <!-- <div class="rbslider-slide slide1"></div>
+                    <div class="rbslider-slide slide2"></div> 
+                    <div class="rbslider-slide slide3"></div> -->
+                 
+
+                </div>  
+
+                <a class="move-down"></a> 
+
+                <div class="rbslider-pagination"></div> 
+
+            </div>
+
+        </section>
+
+        <section class="section page2">
+
+            <div class="section-content-container">
+
+                <hgroup>
+                     <debris id="1">
+                        
+                            <h2>{$field.title}</h2>
+                            <div  style="color:#eee;width: 50%;margin:5% auto;" >
+                            <p style="">{$field.body}</p>  
+                            </div>          
+                     </debris >
+                            </hgroup>
+
+                <ul class="section-content service-list">
+                  <showad cid="8">
+                  
+                    <li>
+
+                        <!--<div class="top {$field.name}">
+
+                             <h3><a href="">{$field.url}</a></h3>
+
+                             <p><a href="">{$field.info2}</a></p>
+                        
+                        </div> -->
+                     <img src="{$field.pic}">
+                         <!--<div class="intro">
+
+                        <p><a href="">{$field.info}</a></p> 
+
+                        </div>-->
+
+                    </li>
+
+                    
+                   </showad>
+                          
+
+                            </ul>
+
+            </div> 
+
+        </section>
+
+        <section class="section page3" style="background-position:center bottom;">
+
+            <div class="section-content-container rbslider-item-list-container">
+
+                <hgroup>
+
+                                    <h2>ITM核心技术</h2>
+
+                    <!-- <h3>传媒链   MTC区块传媒</h3> -->
+
+                            </hgroup>
+
+                <div class="section-content rbslider-item-list-wrapper case-list">
+
+                <ul class="rbslider-item-list clearfix">
+                    <showad cid="9">
+                    
+                        <li>
+                            <a href="javascript:;">
+                             
+                             <img src="{$field.pic}" alt="" />
+                         
+                            </a>
+
+                    </li>   
+                    </showad>
+                                
+                                 
+                
+
+                   <!--  <a onclick="location='case.php'" class="wider-more" href="case.php"></a>     -->            
+
+                </ul>
+
+                 <div class="rbslider-pagination"></div>
+
+                </div>
+
+                <div class="navigation case">
+
+                    <a class="prev"></a>
+
+                    <a class="next"></a>
+
+                </div>
+
+                <div onclick="location='case.php'" class="rbslider-item-list-more"></div>
+
+            </div> 
+
+        </section>
+
+        <section class="section page4" style="background-position:center bottom;">
+
+            <div class="section-content-container rbslider-item-list-container">
+
+                <hgroup>
+
+                                       <!--  <h2>MTC RESPONSIVE DESIGN</h2> 
+
+                    <h3>传媒链红包  点击更精彩</h3>-->
+                    <h2 style="color:#000;">ITM 生态应用</h2>
+
+                            </hgroup>
+
+                <div class="section-content rbslider-item-list-wrapper equipment-list" style="color: #000;margin-top:10%;">
+
+                    <ul class="rbslider-item-list clearfix">
+
+
+                    <showad cid="10">
+                        <li>
+
+                            <p style="font-size: 22px;">
+                                <a href="">
+                                   <!--  <img alt="触及视觉灵魂的移动广告传媒趋势" src="__PUBLIC__/{$Think.Config.DEFAULT_THEME}/images/45_1441954332.png" /> -->
+                                  {$field.name}
+                                </a>
+                            </p>
+
+                            <p class="text" style="font-size: 18px;">
+                            
+                             <a href="">{$field.info}</a>
+
+                            </p>
+
+                        </li>
+                    </showad>    
+                                    
+                                </ul>
+
+                </div>
+
+                <div class="navigation equipment">
+
+                    <a class="prev"></a>
+
+                    <a class="next"></a>
+
+                </div>
+
+            
+
+            </div>
+
+        </section>
+
+        <section class="section page5 white">
+
+            <ul class="home-about" ">
+                <debris id="2">
+                            <li >
+                    
+                    <h2>{$field.title}</h2>
+
+                    <div class="con" style="color:#eee;font-size:30px;">
+
+                    <p>{$field.body}</p>
+
+
+                    </div>
+
+                    <!-- <h3 class="bot">未来的传媒链，让您看到我们到底有多强！</h3> -->
+                </debris>
+                </li>   
+
+            </ul>
+<ul class="home-about-navi" style="display: none;"> 
+
+                <li>愿景</li>
+
+                <li>关于</li>
+
+                <li>荣誉</li> 
+
+                <li class="bg"></li>
+
+            </ul>
+            <div class="home-about-bottom">
+
+                <ul class="clearfix">
+
+                     
+
+                     
+
+                    <li><em>100%</em>用心服务每一个客户</li>
+
+                    <li><em>98%</em>的设计一次通过验收</li>
+
+                    <li><em>95%</em>以上的客户续费率</li>
+
+                </ul>
+
+            </div>
+
+            
+
+        </section>
+
+        
+
+        <section class="section page6">
+
+            <div class="section-content-container">
+
+                <hgroup>
+
+                    <h2> 合作机构</h2>
+
+                   <!--  <h3>合作机构</h3> -->
+
+                            </hgroup>
+
+                <div class="section-content" >
+
+                    <ul class="partner-list clearfix">
+                     <showad cid="2">
+                        <li>
+
+                            <div class="con">
+
+                                <div class="img"><img alt="{$field.name}" src="{$field.pic}" /></div>
+
+                                <h4><a href="">{$field.name}</a></h4>
+
+                                <p><a href="">{$field.info}</a></p>
+
+                            </div> 
+
+                            <div class="ck"></div>
+
+                        </li>
+                    </showad>
+                                    
+
+                                </ul>
+
+                </div>
+
+            </div>      
+
+        </section>
+
+        
+
+        <section class="section page7">
+
+
+            <div class="section-content-container marketing-content">
+
+                <hgroup>
+
+                                        <h2>联系我们</h2>
+
+                   <!--  <h3>整合移动传媒营销，抢占广告行业商机</h3> -->
+
+                            </hgroup>
+
+                <div class="section-content" style="margin:15% auto;">
+
+                    <ul class="marketing_list clearfix" >
+                    <showad cid="12">
+                            <li style="width: 13%">
+
+                            <div class="icon">
+
+                                <div class="circular l"></div>
+
+                                <div class="circular r"></div>
+
+                                <span><img style="margin-top:30px" alt="搜索引擎" src="{$field.pic}" /></span>
+
+                            </div>
+
+                             <h4><a href=""></a></h4>
+                            
+                            <p class="text">
+                            
+                            <a href=""><br></a></p> 
+
+                        </li>
+                     </showad>
+                                
+
+                            </ul>
+
+                </div> 
+                <div style="font-size:20px;color: #eee;position:absolute; left:25%; bottom:5%;   ">
+                    <!-- <h2>tel：<a href="tel:{$Think.Config.cfg_tel}" class="联系电话"></a></h2> -->
+
+                    <p>tel：{$Think.Config.cfg_tel} {$Think.Config.cfg_copyright}</p>
+                                       
+                    </div>
+            </div> 
+        </section>
+        <section class="section page8">
+        
+            <div class="home-contact">
+                                
+
+                <ul class="clearfix">
+                        <h2 >新闻</h2>
+                        
+                    <pagelist >
+                        
+                        
+                            
+                        <li>                            
+                        <p class="img2">   
+
+                            <a href="{$field.url}">{$field.article_title|cms_substr=###,20}</a>
+                        </p>
+                        
+                        </li>
+                        <li class="line"><span>{$field.addtime}</span></li>
+                    </pagelist>
+
+                    
+               
+        
+                </ul>
+        
+                
+        
+            </div>
+        
+        </section>
+
+
+    </div>
+    
+        <include file='Public:foot' />

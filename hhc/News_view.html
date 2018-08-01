@@ -1,0 +1,98 @@
+<include file="Public:head2" />
+
+    <div class="blog">
+
+    <div class="wp">
+
+        <div class="single">
+<?php //P($cms);?>
+            <h1>{$cms.article_title}</h1>
+
+            <div class="meta singlemeta"> 
+            <span>{$cms.addtime}</span> 
+            <span>来源:本站</span> 
+            <span>浏览: {$cms.click} views</span> 
+            <span>字号: <a href="javascript:void(0)" class="mfbig">大</a> 
+            <a href="javascript:void(0)" class="mfmid">中</a> <a href="javascript:void(0)" class="mfsml mfcurrent">小</a> </span> </div>
+
+            <div class="entry">
+
+                <p class="summary"><strong>关键词</strong>:
+                <span><a href="javascript:;">{$cms.keywords}</a></span>
+                <span><a href="javascript:;"></a></span></p>
+
+                <div class="entrycontent fontsml">
+                     {$cms.body}
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="postnavi">
+              
+                <!-- <div class="previous_post">上一篇:
+                <a href="http://www.bst-token.com/article/9.html">老挝首届区块链技术发展高峰论坛</a>
+                </div>
+                <div class="next_post">下一篇:<a href=""></a> </div>-->
+                <div class="previous_post">上一篇:<next flag='2' /></div>
+                <div class="next_post">下一篇:<next flag='3' /></div>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<style>
+
+.single{line-height:24px; color:#333;}
+
+.single h1, .single h2{ padding:15px 0px 8px; font-size:22px; color:#0B3B8C; text-align:center; border-bottom:1px solid #E1E9F0;}
+
+.single .singlemeta{ padding:3px 0px 0px; text-align:center;}
+
+.entry{ margin-top:20px; font-size:14px; overflow:hidden;}
+
+.entry h2{ padding:0; text-align:left; color:#222; border:none;}
+
+.entry p{ margin-bottom:15px;}
+
+.entry .summary{ padding:8px 5px 6px 10px; font-size:13px; background-color:#F5F5F5; border:1px solid #DFDFDF;}
+
+.entry img{ margin-bottom:10px; max-width:620px;}
+
+.entry ul, .entry ol{ margin:10px 20px;}
+
+.entry ul li{ list-style:disc;}
+
+.entry ol li{ list-style:decimal;}
+
+.aligncenter{ text-align:center;}
+
+.alignleft{ float:left; padding-right:10px;}
+
+.alignright{ float:right; padding-left:10px;}
+
+.alignnone, .aligncenter{ float:none; text-align:center;}
+
+
+
+.postnavi{ margin:0px auto 30px; padding:15px 0px 5px; text-align:center;}
+
+.previous_post, .next_post{ width:300px; height:24px; overflow:hidden;}
+
+.previous_post{ float:left; text-align:left;}
+
+.next_post{float:right; text-align:right;}
+
+.postnavi a:link, .postnavi a:visited{ color:#036; text-decoration:none;}
+
+.postnavi a:hover{ color:#B00; text-decoration:underline;}
+
+
+
+.mf{color:#2B497D;}
+</style>
+     <include file='Public:foot2'/>

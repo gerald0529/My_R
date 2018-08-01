@@ -1,0 +1,70 @@
+<include file="Public:head2" />
+
+
+
+
+<body> 
+<header id="header" class="down">
+        <div class="container clearfix" >
+
+            <h1 id="logo"> <a href="/"><img alt="logo图片" src="__ROOT__/{$Think.Config.cfg_logo}" style="width: 5.5%"/></a></h1>
+
+            <nav>
+
+                <a class="icon_menu" id="index_xs"><img src="__PUBLIC__/{$Think.Config.DEFAULT_THEME}/images/25_caidan.png"></a>
+
+                <ul id="menu">
+
+               
+
+               <li data-menuanchor="page1" <if condition="$cms['cid'] eq 1">class="active"</if>><a data-name="home" href="/"><span>首页</span></a></li> 
+                
+                <channel type='top' >
+                    <if condition="$field['keywords'] neq 'page8'"> 
+                    <li data-menuanchor="{$field.keywords}"><a href="/index.php#{$field.keywords}"><span>{$field.cname}</span></a></li>
+                    <else />
+                     <li data-menuanchor="{$field.keywords}" class="active"><a href="{$field.url}"><span>{$field.cname}</span></a></li>
+                    </if>
+                </channel>   
+                
+
+                <li style=" width:100%;float:right" id="index_x"><img src="__PUBLIC__/{$Think.Config.DEFAULT_THEME}/images/26_close.png" style="padding-right:15px; float:right; margin-top:10px"></li>
+
+                </ul> 
+
+            </nav>
+
+            <div class="nav-tel" style="font-size:16px"><a href="/">简体中文 </a> | 
+            <a style="color:#fff" href="./?t=en">English</a></div>
+
+        </div>
+
+    </header> 
+
+
+
+        
+            <div id="li_div" style="">
+    
+                <ul class="">
+                        
+                    <h2 id="ll_1">{$cms.article_title}</h2>
+                    
+                        <div id="p_text">
+                            <li >添加时间：<span>{$cms.addtime}&nbsp;&nbsp;&nbsp;&nbsp;</span>文章来源：<span>本站</span></li>
+                                
+                            <li style="margin-top:5%;">                            
+                            <p>   
+                               {$cms.body}
+                            </p>
+                            </li>
+                        </div>
+                </ul>
+            </div>
+ 
+  
+
+
+  </div>
+
+ 
