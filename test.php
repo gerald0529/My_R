@@ -2,7 +2,5 @@
 
 echo "Hello world!";
 
-1111111111111
-3333
-kkkkk
+echo 33333333;
 ?>
