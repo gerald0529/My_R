@@ -1,2 +1,2 @@
-# My_R
+# My test repository
 This is my repository
